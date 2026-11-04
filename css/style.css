@@ -1,0 +1,64 @@
+/* Main stylesheet for John O'Reilly Cars */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* Task 3: Background image (ID selector, home page only) */
+#home {
+    background-image: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Class selector */
+.tagline {
+    font-style: italic;
+    color: #f5a623;
+}
+
+/* Descendant selector */
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Pseudo-class selector */
+nav a:hover {
+    color: #f5a623;
+    text-decoration: underline;
+}
+
+/* Task 2: Box model - white box keeps text readable over the background */
+main {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 3px solid #222222;
+    background-color: white;
+}
+
+h2 {
+    color: #222222;
+}
+
+/* Task 2: Box model */
+footer {
+    height: 40px;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 3px solid #f5a623;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
