@@ -1,9 +1,17 @@
 /* Main stylesheet for John O'Reilly Cars */
 
+/* Accessibility (dyslexia): simple sans-serif font, larger text,
+   extra line spacing and left-aligned (not justified) text */
 body {
     font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
     margin: 0;
     background-color: #f2f2f2;
+}
+
+main p {
+    text-align: left;
 }
 
 /* Task 3: Background image (ID selector, home page only) */
@@ -28,18 +36,21 @@ header {
 }
 
 /* Descendant selector */
+/* Accessibility (colour blindness): links are underlined and bold,
+   so they don't rely on colour alone */
 nav a {
     color: white;
-    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Pseudo-class selector */
 nav a:hover {
     color: #f5a623;
-    text-decoration: underline;
 }
 
 /* Task 2: Box model - white box keeps text readable over the background */
+/* Accessibility (visual impairment): high contrast, dark text on white */
 main {
     width: 80%;
     margin: 30px auto;
